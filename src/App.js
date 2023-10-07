@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import Button from './components/Button';
 import Editor from './components/Editor';
@@ -8,6 +8,22 @@ function App() {
     const [html, setHtml] = useState('');
     const [css, setCss] = useState('');
     const [js, setJs] = useState('');
+    const [srcDoc, setSrcDoc] = useState(` `);
+
+    useEffect(() => {
+        const timeOut = setTimeout(() => {
+            setSrcDoc(
+                `
+          <html>
+            <body>${html}</body>
+            <style>${css}</style>
+            <script>${js}</script>
+          </html>
+        `
+            )
+        }, 250);
+        return () => clearTimeout(timeOut)
+    }, [html, css, js])
 
     const onTabClick = (editorName) => {
         setOpenedEditor(editorName);
@@ -50,6 +66,19 @@ function App() {
                     )
                 }
             </div>
+
+                <div>
+                    <iframe
+                        srcDoc={srcDoc}
+                        title="output"
+                        sandbox="allow-scripts"
+                        frameBorder="1"
+                        width="100%"
+                        height="100%"
+                    />
+                </div>
+
+
         </div>
     );
 }
