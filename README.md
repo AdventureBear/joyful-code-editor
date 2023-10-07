@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Joyful Code Editor
+
+## References
+Building a Code Editor: [https://www.smashingmagazine.com/2022/01/building-web-code-editor/]
+Dowgrading to React 17   [https://dev.to/ifeanyichima/how-to-downgrade-from-react-18-to-1702-818]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## What's this?
+This is a code editor built in React (v17) with codemirror and react-codemirror to use as a starting point template 
+for students in Joy of Coding Academy.  
+
 
 ## Available Scripts
 
@@ -43,32 +52,3 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-https://www.smashingmagazine.com/2022/01/building-web-code-editor/
-https://dev.to/ifeanyichima/how-to-downgrade-from-react-18-to-1702-818
