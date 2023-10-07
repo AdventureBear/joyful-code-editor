@@ -20,13 +20,13 @@ const Editor = ({ language, value, setEditorState }) => {
     return (
         <div className="editor-container">
             <div style={{marginBottom: "10px"}}>
-                <label for="themes">Choose a theme: </label>
+                <label htmlFor="themes">Choose a theme: </label>
                 <select name="theme" onChange={(el) => {
                     setTheme(el.target.value)
                 }}>
                     {
-                        themeArray.map( theme => (
-                            <option value={theme}>{theme}</option>
+                        themeArray.map( (theme, i) => (
+                            <option key={i} value={theme}>{theme}</option>
                         ))
                     }
                 </select>
